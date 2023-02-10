@@ -1,0 +1,123 @@
+body {
+    background-image: url(20221218_171729.jpg);
+     background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment:fixed;
+    background-size: 50%;
+    margin: 0;
+    font-family:roboto;
+}
+h1{
+    color:darkolivegreen;
+/* font-family:Courier; */
+text-align:center;
+}
+
+ /* p{
+  display:inline;
+  /* position:relative; */
+  /* bottom: 10px; */
+  /* right: 0; */
+  /* left:90%; */
+  /* width: 40%; */
+ 
+  /* text-align: left; */
+  /* line-height: 0.1; */
+  /* color:coral; */
+  /* border: 1px solid red; */
+} */
+
+/* form is displayed as paragraph */
+.formdisplay{
+  display:inline
+}
+
+/* .solid a {
+    border: 2px inset red;
+    border-radius: 5px;
+    border-width: 5px;
+    background-color: lightgreen;
+    margin: 25px;
+    padding: 5px;
+} */
+
+
+/* position of footer */
+.absolute {
+    position:fixed;
+    bottom: 20px;
+    left: 5px;
+    width: 150px;
+    text-align: center;
+    /* border: 1px solid red; */
+  }
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  
+  /* Style the side navigation */
+  .sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    /* z-index: 1; */
+    top: 0;
+    /* left: 0; */
+    background-color: lightblue;
+    /* overflow-x: hidden; */
+  }
+   
+  
+  /* Side navigation links */
+  .sidenav a {
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color on hover */
+  .sidenav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* Style the content */
+  .content {
+    margin-left: 160px;
+    padding-left: 20px;
+    /* border: 1px solid yellow; */
+  }
+ 
+  /* position of down link */
+.endlink {
+  position:relative;
+  top: 0;
+left: 90%;
+  width: 120px;
+  /* height: 20px; */
+  text-align: right;
+  font-size: smaller;
+  line-height: 0.1;
+  color:white;
+  /* border: 1px solid red; */
+ 
+}
+
+/* position of up link */
+.uplink {
+  position:relative;
+  bottom: 10px;
+  /* right: 0; */
+  left:90%;
+  width: 120px;
+  /* height: 100px;
+  border: 3px solid #73AD21; */
+  text-align: right;
+  line-height: 0.1;
+  color:white;
+  /* border: 1px solid red; */
+}
