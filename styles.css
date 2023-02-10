@@ -13,19 +13,19 @@ h1{
 text-align:center;
 }
 
- /* p{
-  display:inline;
+ p{
+  display:block;
   /* position:relative; */
   /* bottom: 10px; */
   /* right: 0; */
   /* left:90%; */
-  /* width: 40%; */
+  width: 40%;
  
   /* text-align: left; */
   /* line-height: 0.1; */
   /* color:coral; */
   /* border: 1px solid red; */
-} */
+}
 
 /* form is displayed as paragraph */
 .formdisplay{
