@@ -1,0 +1,252 @@
+
+/* just to define dividsions */
+div{
+    /* border-color: black;
+    border-style: dashed; */
+    border-radius: 25px;
+    align-items: center;
+}
+
+
+h1, h3, p {
+    text-align: center;
+
+}
+
+/* the top part */
+.head{
+    position:fixed;
+    /* top: 0px; */
+    display:flex;
+    justify-content: space-between;
+    width:80%;
+    padding-top: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: white;
+}
+
+.headleft{
+    display:flex;
+    justify-content: flex-start;
+
+}
+
+/* to change button color */
+.color{
+    background-color: white !important;
+    color: grey !important;
+    border: 0 !important;
+    font-size: larger !important;
+}
+.colorhome{
+    background-color: white !important;
+    color: greenyellow !important;
+    border: 0 !important;
+    font-size: larger !important;
+}
+/* to position the hippo */
+.logo {
+display:flex ;
+justify-content: center;
+padding-top: 100px;
+margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* to position the title */
+.title {
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+    }
+
+/* first set of paragraphs */
+
+.article{
+    display:flex;
+    justify-content: space-around;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.paratop{
+    padding:0px 25px 0px 25px;
+    
+}
+
+
+/* to contain the 3 paragraphs */
+.grid-container1{
+    display:grid;
+    grid-template-columns: 25% 25% 25% ;
+    gap:10px;
+    justify-content: space-around;
+    padding:25px 0;
+    /* grid-auto-columns: auto; */
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+/* second set of paragraphs */
+.parasecond1{
+    display: grid;
+    /* flex-wrap: wrap; */
+    background-color: yellowgreen;
+    color: white;
+    font-size: large;
+    height:300px;
+    padding :10px;
+    
+}
+.color1{
+    background-color: yellowgreen !important;
+    color: white !important;
+    border: 0 !important;
+    width:100%;
+
+}
+
+.parasecond2{
+    display: grid;
+    /* flex-wrap: wrap; */
+    background-color: blueviolet;
+    color: white;
+    font-size: large;
+    height:300px;
+    padding:10px;
+
+}
+.color2{
+    background-color: blueviolet !important;
+    color: white !important;
+    border: 0 !important;
+    width:100%;
+
+}
+
+.parasecond3{
+    display: grid;
+    background-color: violet;
+    color: white;
+    font-size: large;
+    height:300px;
+    padding:10px;
+
+}
+.color3{
+    background-color: violet !important;
+    color: white !important;
+    border: 0 !important;
+    width:100%;
+    /* height: 40%; */
+}
+
+.grid-container2{
+    display:grid;
+    align-content: space-around;
+    grid-template-columns: 25% 75%;
+    gap:10px;
+    padding:10px;
+    margin-left: 10%;
+    margin-right: 10%;
+ }
+  
+  /* for the third part with many links */
+  .grid-container21{
+    display:grid;
+    grid-template-columns: 20% 20% 20% 20% ;
+    gap:25px;
+    padding:5px;
+    justify-content: space-around;
+  }
+
+
+  /* section color */
+  section{
+    background-color: #00b39b;
+    /* width:100%; */
+    height: 600px;
+  }
+ .grid-container3{
+    display:grid;
+    grid-template-columns: 25% 75%;
+    /* align-content: space-around; */
+    gap:10px;
+    padding:5px;
+    margin-left: 10%;
+    margin-right: 10%;
+ }
+
+ .grid-item3{ 
+    padding:10px;
+    /* height: 350px;
+    width:300px; */
+    /* font-size: auto; */
+ }
+
+  .grid-container31{
+    display:grid;
+    /* justify-content: space-around; */
+    grid-template-columns: 50% 50% ;
+    gap:10px;
+    align-items: center;
+ }
+ 
+
+ .grid-container311{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    gap:10px;
+    padding-top: 40px;
+
+}
+
+.grid-container312{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    gap:10px;
+    padding-bottom: 40px;
+
+}
+.grid-item31{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    border-radius: 0;
+    width:100%;
+    height:270px;
+
+ }
+
+
+ .grid-container4{
+    display:grid;
+    grid-template-columns: 25% 25% 25% ;
+    gap:10px;
+    justify-content: space-around;
+    padding:25px 0;
+    /* grid-auto-columns: auto; */
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+
+.imgend {
+    width:100%;
+}
+
+
+ @media screen and (max-width: 30%) {
+    .color3 { width:20%;}
+    .grid-container311{width:100%;}
+    .grid-container312{width:30%;}
+    /* .grid-item31{width:100%; height:100%;} */
+}
