@@ -1,0 +1,34 @@
+
+var
+     sentence : STRING;
+     numchar,  numvowels : integer:=0;
+     numword : integer :=1;
+
+begin
+     read(sentence);
+     IF (text.endsWith(".")== true) THEN
+          FOR i FROM 0 TO sentence.length STEP step 1 DO
+               IF (STRING(i)<>(" ")) THEN
+                    numchar := numchar + 1 ;
+               END_IF
+
+               IF (STRING(i)==(" ")) THEN
+                    numword := numword + 1 ;
+               END_IF
+
+               IF (string(i) ==("a","e","u", "o", ) ) THEN
+                    numvowels := numvowels + 1;
+               END_IF
+          END_FOR
+          write (numchar);
+          write (numword);
+          write (numvowels);  
+
+     ELSE write (rewrite a sentence that ends with a point);
+          
+     END_IF
+
+
+     
+     
+     
