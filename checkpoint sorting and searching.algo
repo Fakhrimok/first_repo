@@ -1,0 +1,18 @@
+ALGORITHM simple_sorting
+VAR
+    set : ARRAY_OF integer[n];
+    temp, i, j, n : INTEGER
+BEGIN
+    temp := 0;
+    FOR i FROM 0 TO n-1 DO
+        FOR j FROM 0 TO n-1 DO
+            IF (set[j] > set[j+1]) THEN
+                temp = tab[j];
+                tab[j] = tab[j+1];
+                tab[j+1] = temp;
+            END_IF
+        END_FOR
+        set_instructions
+    END_FOR
+
+END
