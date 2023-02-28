@@ -1,0 +1,86 @@
+// problem1: sum of distinct elements
+ALGORITHM distinct_elements
+VAR
+    length1,length2,i,j : INTEGER;
+    sum1, sum2, sumequals : INTEGER := 0 ;
+    set1 : ARRAY_OF INTEGER[50];
+    set2 : ARRAY_OF INTEGER[50];
+
+BEGIN
+// step1: insert length and elements of each set
+// SET1
+    REPEAT
+        write ("give the length of set1 no more than 50");
+        read (length1);
+    UNTIL (length1 <= 50);
+    
+    FOR i FROM 0 TO length1-1 DO
+        write ("enter set1 elements");
+        read (set1[i]);
+    END_FOR
+// SET2
+    REPEAT
+        write ("give the length of set2 no more than 50");
+        read (length2);
+    UNTIL (length2 <= 50);
+
+    FOR j FROM 0 TO length2-1 DO
+        write ("enter set2 elements");
+        read (set2[j]);
+    END_FOR
+
+// step2: compare both sets and add the copies
+
+FOR i FROM 0 TO length1-1 DO
+    FOR j FROM 0 TO length2-1 DO
+        IF (set1[i]=set2[j]) THEN
+             sumequals = sumequals + set1[i] + set2[j]; // sum botof identical elements            
+        END_IF
+    END_FOR
+END_FOR
+
+// step3: sum of each set
+FOR i FROM 0 TO length1-1 DO
+    sum1 = sum1 + set1[i];
+END_FOR
+FOR j FROM 0 TO length2-1 DO
+    sum2 = sum2 + set2[j];
+END_FOR
+
+// the sum of distinct elements
+
+    sum = sum1 + sum2 - sumequals;
+    write(sum);
+
+END
+
+// problem2: dot_product
+
+PROCEDURE dot_product(T1, T2 : ARRAY_OF INTEGER) : INTEGER ;
+VAR
+    i: INTEGER; 
+    DP : INTEGER := 0;
+BEGIN
+    FOR i FROM 0 TO 2 DO
+        DP = DP + T1[i] * T2[i];
+    END_FOR
+
+    write (DP); 
+    END
+
+ALGORITHM orthogonal_vectors
+VAR
+    V1, V2 : ARRAY_OF INTEGER
+    fn : INTEGER;
+     
+BEGIN
+
+    fn = dot_product (V1, V2);
+       IF (fn = 0) THEN
+        write (vectors are orthogonal);
+       END_IF
+    END_FOR
+END
+
+
+if
