@@ -1,0 +1,28 @@
+ALGORITHM palindrome
+VAR
+    word: STRING;
+    length, i: integer;
+BEGIN
+    length := STRING.length;
+    IF (length=0 ) THEN
+        write("this word is a palindrome");
+    ELSE_IF (length=1) THEN
+        write("this word is a palindrome");
+
+    ELSE
+        FOR i FROM 0 TO (length-1)/2 STEP step  DO
+        IF (STRING[i]<>STRING[length-1-i]) THEN
+            write("this word is not a palindrome");
+        ELSE
+            write("this word is a palindrome");
+        END_IF
+    END_FOR
+
+
+
+
+    END_IF
+
+
+    
+END
